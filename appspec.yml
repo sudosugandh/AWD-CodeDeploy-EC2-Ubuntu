@@ -1,12 +1,10 @@
 version: 0.2
 os: linux
 files:
-  - source: /
+  - source: /index.html
     destination: /home/ubuntu
 hooks:
-  AfterInstall:
-    - location: afterinstall.sh
+  Beforeinstall:
+    - location: beforeinstall.sh
       timeout: 100
-  ApplicationStart:
-    - location: applicationstart.sh
-      timeout: 100
+  
